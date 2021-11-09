@@ -1,0 +1,24 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class ExerciseLogicalOperators {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+	
+		double balance = 2000.50;
+		
+		System.out.println("WITHDRAWAL AMOUNT MORE THAN RM 1000.00 IS NOT ALLOWED");
+		System.out.println("Please enter the total withdrawal amount: ");
+		double amount = sc.nextDouble();
+		
+		if ((amount <= 1000) && amount<=balance){
+			balance = balance - amount;
+			System.out.printf("Account new balance = " + "%.2f",balance);
+		}
+		
+	}
+
+}
