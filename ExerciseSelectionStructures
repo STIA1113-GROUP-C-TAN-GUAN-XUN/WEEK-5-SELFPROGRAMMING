@@ -1,0 +1,38 @@
+package selfProgramming;
+
+public class ExerciseSelectionStructures {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double y=15.0;
+		double x=25.0;
+		if (y!=x)
+	     System.out.println("Result : y not equal x");
+		
+		int total = 10;
+		int MAX = 9;
+		
+		if (total > MAX)
+		{ //block statement start
+		   System.out.println ("Error!!");
+		   //errorCount++;
+		   System.out.println();
+		   
+		} //block statement end
+		
+		double amount = 2.5;
+		double balance = 5;
+		
+		if (amount <= balance) 
+		{
+			balance = balance - amount; 
+			System.out.println("Acct new balance = " + balance);
+		}
+		
+		if (amount <= balance) 
+			balance = balance - amount; 
+			System.out.println("Acct new balance = " + balance);
+			// result show occurs error with no block statement
+	}
+
+}
