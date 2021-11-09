@@ -1,0 +1,28 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		double min_level = 1600;
+		double income;
+		
+		System.out.println("Enter your income per month: ");
+		income = sc.nextDouble();
+		
+		System.out.println("Enter your age:  ");
+		int a = sc.nextInt();
+		
+		if ((income <= min_level) && a >= 21) { // both statement need to be true then the result will only become true for '&&'
+			System.out.println("Qualified to apply subsidies!");
+		}
+		if ((income >= min_level) || a <= 20) { //either one is true, then the statement is true for '||'
+			System.out.println("Not qualified to apply subsidies");
+		}
+	}
+
+}
