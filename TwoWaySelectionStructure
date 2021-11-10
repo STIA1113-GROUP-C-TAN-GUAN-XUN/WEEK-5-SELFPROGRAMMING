@@ -1,0 +1,71 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class TwoWaySelectionStructure {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the value of a: ");
+		double a = sc.nextDouble();
+		
+		System.out.println("Enter the value of b: ");
+		double b = sc.nextDouble();
+		
+		System.out.println("Enter the value of c: ");
+		double c = sc.nextDouble();
+		
+		System.out.println("Enter the value of scalar d: ");
+		double d = sc.nextDouble();
+		
+		double sum = a*b/c;
+		
+		if(sum >= 50) {
+			System.out.printf("The sum is greater than 50 which is " + "%.2f",sum);
+		} 
+		else {
+			System.out.printf("The sum is lower than 50 which is " + "%.2f",sum);
+		}
+		
+		System.out.println();
+		
+		double total = Math.pow(a+b+c,2);
+		double total1 = (Math.pow(a,2) + Math.pow(b, 2) + Math.pow(c, 2) )*d;
+		double total2 = 0;
+		
+		if(total < total1) {
+			System.out.println();
+			System.out.println("Total: " + total);
+			System.out.println("Total1: "+ total1);
+			System.out.println("Total is lower than Total1");
+		}else if(total > total2){
+			System.out.println();
+			System.out.println("Total: " + total);
+			System.out.println("Total2: "+ total2);
+			System.out.println("Total is greater than Total2");
+		}else {
+			System.out.println();
+			System.out.println("Total is lower than Total2");
+		}
+		
+		int x;
+	
+		System.out.println();
+		System.out.println("Enter the value of integer x: ");
+		x = sc.nextInt();
+		
+		if(x>=1) {
+			System.out.println("The value of x: " + x);
+			System.out.println("This is a positive number");
+		}else if (x<0) {
+			System.out.println("The value of x: " + x);
+			System.out.println("This is a negative number");
+		}else {
+			System.out.println("The value of x: " + x);
+			System.out.println("You enter the zero number");
+		}
+	}
+
+}
