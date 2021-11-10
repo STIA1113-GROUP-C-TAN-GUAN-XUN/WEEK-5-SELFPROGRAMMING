@@ -1,0 +1,63 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class ExerciseMultipleSelections {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the mark of your Kursus Kenegaraan Malaysia: ");
+		int a = sc.nextInt();
+		
+		System.out.println("Enter the mark of your Kursus Fundamental of Finance: ");
+		int b = sc.nextInt();
+		
+		System.out.println("Enter the mark of your Kursus Programming 1: ");
+		int c = sc.nextInt();
+		
+		if((a>=90)&&(a<=100)) {
+			System.out.println("Your grade for this course is Gred A");
+		}else if((a>= 80) && (a<=89)) {
+			System.out.println("Your grade for this course is Gred B");
+		}else if((a>= 70) && (a<=79)) {
+			System.out.println("Your grade for this course is Gred C");
+		}else if((a>= 60) && (a<=69)) {
+			System.out.println("Your grade for this course is Gred D");
+		}else if((a<= 59) && (a>= 0)) {
+			System.out.println("Your grade for this course is Gred F");
+		}else {
+			System.out.println("ERROR MARK INPUT!!!");
+		}
+		
+		if((b>=90)&&(b<=100)) {
+			System.out.println("Your grade for this course is Gred A");
+		}else if((b>= 80) && (b<=89)) {
+			System.out.println("Your grade for this course is Gred B");
+		}else if((b>= 70) && (b<=79)) {
+			System.out.println("Your grade for this course is Gred C");
+		}else if((b>= 60) && (b<=69)) {
+			System.out.println("Your grade for this course is Gred D");
+		}else if((b<= 59) && (b>= 0)) {
+			System.out.println("Your grade for this course is Gred F");
+		}else {
+			System.out.println("ERROR MARK INPUT!!!");
+		}
+		
+		if((c>=90)&&(c<=100)) {
+			System.out.println("Your grade for this course is Gred A");
+		}else if((c>= 80) && (c<=89)) {
+			System.out.println("Your grade for this course is Gred B");
+		}else if((c>= 70) && (c<=79)) {
+			System.out.println("Your grade for this course is Gred C");
+		}else if((c>= 60) && (c<=69)) {
+			System.out.println("Your grade for this course is Gred D");
+		}else if((c<= 59) && (c<= 0)) {
+			System.out.println("Your grade for this course is Gred F");
+		}else {
+			System.out.println("ERROR MARK INPUT!!!");
+		}
+	}
+
+}
