@@ -1,0 +1,42 @@
+package selfProgramming;
+
+public class SwitchStructures {
+
+	public static void main(String[] args) {
+		int x = 3;
+		
+		switch (x){
+		case 1 :
+			System.out.println("x=1");
+			break;
+		case 2 :
+			System.out.println("x=2");
+			break;
+		case 3 :
+			System.out.println("x=3");
+			break; //if without break will continue print 'x=4' and so on
+		case 4 :
+			System.out.println("x=4");
+			break;
+		default:
+			System.out.println("default");
+		}
+		
+		char ch = 'b';
+		
+		switch (ch) 
+		{
+		case 'a' : 
+			System.out.println("ch=a");
+			
+		case 'b' :
+			System.out.println("ch=b");
+			
+		case 'c' :
+			System.out.println("ch=c");
+			
+		default:
+			System.out.println("default");
+		}
+	}
+}
